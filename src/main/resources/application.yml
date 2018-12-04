@@ -1,0 +1,18 @@
+server:
+  address: 127.0.0.1
+  port: 8976
+
+spring:
+  thymeleaf:
+    encoding: utf-8
+    cache: false
+    mode: HTML5
+  #限制上传的大小
+  http:
+    multipart:
+      max-file-size: 2048KB
+      max-request-size: 2048KB
+  #本地独立的MongoDB
+  data:
+    mongodb:
+      uri: mongodb://amcuer:123456@127.0.0.1:27017/amcuweb
